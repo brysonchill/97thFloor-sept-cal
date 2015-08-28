@@ -1,0 +1,471 @@
+@font-face {
+    font-family: 'gotham-blackgotham-black';
+    src: url('gothmbla-webfont.eot');
+    src: url('gothmbla-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gothmbla-webfont.woff') format('woff'),
+         url('gothmbla-webfont.ttf') format('truetype'),
+         url('gothmbla-webfont.svg#gotham-blackgotham-black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gotham-lightgotham-light';
+    src: url('gothmlig-webfont.eot');
+    src: url('gothmlig-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gothmlig-webfont.woff') format('woff'),
+         url('gothmlig-webfont.ttf') format('truetype'),
+         url('gothmlig-webfont.svg#gotham-lightgotham-light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gotham-bookgotham-book';
+    src: url('gothmbok-webfont.eot');
+    src: url('gothmbok-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gothmbok-webfont.woff') format('woff'),
+         url('gothmbok-webfont.ttf') format('truetype'),
+         url('gothmbok-webfont.svg#gotham-bookgotham-book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'blackjackregular';
+    src: url('black_jack-webfont.eot');
+    src: url('black_jack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('black_jack-webfont.woff') format('woff'),
+         url('black_jack-webfont.ttf') format('truetype'),
+         url('black_jack-webfont.svg#blackjackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background: #FFF;
+	padding: 0;
+}
+
+h1, h2, h3, h4 {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-family: 'gotham-lightgotham-light';
+	color: #423636;
+	font-size: 14px;
+  padding: 85px 0px 30px 0px;
+}
+
+h2 {
+	font-family: 'gotham-blackgotham-black';
+	color:#2CBEBC;
+	font-size: 28px;
+	letter-spacing: 6px;
+	padding: 0px 0px 45px 0px;
+}
+
+.breakBorderTop {
+	width: 100%;
+  height: 0px;
+  margin: 0 auto;
+  border-bottom: solid 1px #000;
+}
+
+.breakBorderBottom {
+	width: 100%;
+  height: 0px;
+  margin: 0 auto;
+}
+
+ h3 {
+ 	color: #FB7F62;
+	margin: 0 auto;
+	padding: 0 0px;
+	background: #FFF;
+	margin-top: -12px;
+	font-family: 'gotham-lightgotham-light';
+	font-size: 21px;
+	margin-bottom: 10px;
+}
+
+h4{
+	color: #FB7F62;
+	width: 300px;
+	margin: 0 auto;
+	padding: 0 0px;
+	background: #FFF;
+	margin-top: -12px;
+	font-family: 'gotham-lightgotham-light';
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+a img {
+	border: none; 
+}
+
+.instructions {
+	font-family: 'gotham-lightgotham-light';
+	font-size: 10px;
+	color: #BBB8BC;
+	text-align: center;
+	margin: 0;
+	padding: 6px 0px 35px 0px;
+	text-transform: uppercase;
+}
+
+.siteWrap {
+	width: 100%;
+	height: 100%;
+	z-index: 50;
+}
+
+.outerWrap {
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.innerWrap {
+	position: absolute;
+	width: 100%;
+	left: 50%;
+	margin-left: -50%;
+}
+
+.wrapper {
+	width: 100%;
+	position: absolute;
+
+}
+
+.myriadLogo {
+	max-width: 120px;
+}
+
+.dayMarker {
+	position: relative;
+  width: 13.28%;
+  height: 50px;
+  float: left;
+  margin: .5%;
+  text-align: center;
+  padding: 30px 0px 25px 0px;
+}
+
+.fa {
+	font-size: 18px !Important;
+}
+
+.orange {
+	color: #FB7F62;
+}
+
+.dayWrap {
+	position: relative;
+	width: 13.28%;
+	height: 100px;
+	float: left;
+	margin: .5%;
+	cursor: pointer;
+	color: #BBB8BC;
+	-moz-transition: color .5s;     /* Firefox and other browsers using Mozilla's browser engine */
+	-webkit-transition: color .5s;  /* Safari, Chrome and browsers using the Webkit engine */
+	-o-transition: color .5s;       /* Opera */
+	-ms-transition: color .5s;      /* Internet Explorer (but not always) */
+	transition: color .5s;
+}
+
+.dayWrap p {
+ 	font-size: 26px;
+	text-align: center;
+	padding: 10px 0 10px 0;
+	width: 50px;
+	margin-left: 0px;
+	font-family: 'gotham-bookgotham-book';
+	font-weight: 800;
+  margin-left: 52px;
+}
+
+.dayWrap p:hover {
+	background: #2CBEBC;
+	border-radius: 50%;
+	color: #FFF;
+	background-size: contain;
+
+}
+
+.dayWrapHide {
+	position: relative;
+	width: 13.28%;
+	height: 100px;
+	float: left;
+	margin: .5%;
+	color: #BBB8BC;
+	-moz-transition: background .5s, color 1.5s;     /* Firefox and other browsers using Mozilla's browser engine */
+	-webkit-transition: background .5s, color 1.5s;  /* Safari, Chrome and browsers using the Webkit engine */
+	-o-transition: background .5s, color 1.5s;       /* Opera */
+	-ms-transition: background .5s, color 1.5s;      /* Internet Explorer (but not always) */
+	transition: background .5s, color 1.5s;
+}
+
+.dayWrapHide p {
+	font-size: 64px;
+	text-align: center;
+	margin: 37px 0 0 0;
+	padding: 0;
+	font-family: 'gotham-bookgotham-book';
+}
+
+.dayWrapNotDay {
+	position: relative;
+	width: 13.28%;
+	height: 100px;
+	float: left;
+	margin: .5%;
+}
+
+.tipBoxWrap {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	min-height: 100%;
+	background: rgba(111, 116, 122, 0.9);
+	opacity: 0;
+}
+
+.tipBox {
+	background: #FFF;
+	position: fixed;
+	width: 100px;
+	height: 100px;
+	opacity: 0;
+	left: 50%;
+	top: 50%;
+	margin-left: -75px;
+	margin-top: -50px;
+}
+
+.tipBox p {
+	color: #333;
+	font-size: 8px;
+	text-align: center;
+	margin: 5px 0 0 0;
+	padding: 0 10px;
+	font-family: 'gotham-lightgotham-light';
+	color: #423636;
+}
+
+.tipBox h4 {
+	margin: 10px 0 0 0;
+	padding: 0;
+	font-family: 'blackjackregular';
+	font-size: 12px;
+	color:	#2CBEBC;
+}
+
+.tipFront {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.tipImage {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	background-color: #fff;
+	margin: auto 0;
+	padding: 130px 50px 0px 50px;
+}
+
+.quiz {
+	width: 250px;
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	margin-left: -127px;
+}
+
+.close {
+	position: absolute;
+  top: -25px;
+  right: -25px;
+  margin-left: -35px;
+  width: 60px;
+  height: 60px;
+  background: #2CBEBC;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 0;
+  color: #fff;
+  line-height: 73px;
+  text-align: center;
+}
+
+.fa-close-custom{
+	font-size: 35px !important;
+}
+
+.socialPopWrap {
+	height: 70px;
+	width: 200px;
+	position: absolute;
+	left: 50%;
+	margin-left: -88px;
+	bottom: 60px;
+  opacity: 0;
+}
+
+.socialPopWrap p {
+	font-family: 'gotham-lightgotham-light';
+	font-size: 14px;
+	color: #423636;
+	text-align: center;
+}
+
+.socialPop {
+  width: 40px;
+  height: 70px;
+  display: inline-block;
+  text-align: center;
+}
+
+.twitter {
+	left: 140px;
+}
+
+.googlePlus {
+	left: 280px;
+}
+
+.pinterest {
+	left: 420px;
+}
+
+.logo {
+	position: absolute;
+	bottom: 120px;
+	right: 5px;
+}
+
+.clear {
+	clear: both;
+}
+
+.available {
+	color: #423636;
+}
+
+.socialBottom {
+	padding: 30px 0 0 0;
+}
+
+.socialBottomWrap {
+	height: 70px;
+	width: 160px;
+	margin: 0 auto;
+	background: #fff;
+	position: relative;
+	margin-bottom: 80px;
+}
+
+.socialBottomIcons {
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	cursor: pointer;
+}
+
+.facebookB {
+	left: 20px;
+}
+
+.twitterB {
+	left: 60px;
+}
+
+.googlePlusB {
+	left: 100px;
+}
+
+.pinterestB {
+	left: 140px;
+}
+
+.headerImg { 
+	position: absolute;
+	width: 740px;
+	height: 119px;
+	left: 50%;
+	margin-left: -370px;
+	top: 50px;
+}
+
+.firstDay {
+	position: relative;
+	width: 13.28%;
+	height: 150px;
+	float: left;
+	margin: .5%;
+	cursor: pointer;
+	color: #BBB8BC;
+	-moz-transition: color .5s;     /* Firefox and other browsers using Mozilla's browser engine */
+	-webkit-transition: color .5s;  /* Safari, Chrome and browsers using the Webkit engine */
+	-o-transition: color .5s;       /* Opera */
+	-ms-transition: color .5s;      /* Internet Explorer (but not always) */
+	transition: color .5s;
+}
+
+.firstDay p {
+	font-size: 64px;
+	text-align: center;
+	margin: 39px 0 0 0;
+	padding: 0;
+	font-family: 'gotham-bookgotham-book';
+	color: #423636;
+}
+
+.firstDay:hover {
+	color: #FFF;
+	background-size: contain;
+}
+
+.link a {
+	height: 40px;
+  width: 240px;
+  left: 34%;
+  position: absolute;
+  bottom: 40px;
+  z-index: 100;
+}
+
+.link a.clickable {
+	cursor: pointer;
+}

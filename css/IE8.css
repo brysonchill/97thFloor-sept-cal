@@ -1,0 +1,15 @@
+.tipBox {
+	display: none;
+}
+
+.socialPopWrap {
+	display: none;
+}
+
+a:active {
+    outline: none;
+}
+    
+a:focus { 
+	outline:none 
+}
